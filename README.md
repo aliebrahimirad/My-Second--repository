@@ -14,7 +14,7 @@ def add_flag_wave_effect(img, amplitude=8, wavelength=40):
     result = np.zeros_like(img_np)
     for y in range(h):
         shift = int(amplitude * np.sin(2 * np.pi * y / wavelength))
-        result[y] = np.roll(img_np[y], shift, axis=0)
+        result[y] = np.roll(img_np[y], shift, axi=0)
 
     return Image.fromarray(result)
 
