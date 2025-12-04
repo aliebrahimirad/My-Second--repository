@@ -18,7 +18,7 @@ def add_flag_wave_effect(img, amplitude=8, wavelength=40):
 
     return Image.fromarray(result)
 
-def overlay_logo_on_tail(aircraft_img, flag_img, position=(50, 50), opacity=180):
+def overlay_logo_on_tail(aircraft_im, flag_img, position=(50, 50), opacity=180):
     """Overlay the flag onto the aircraft tail."""
     flag = flag_img.convert("RGBA")
     flag.putalpha(opacity)
