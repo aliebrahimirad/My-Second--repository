@@ -3,7 +3,7 @@
 # Transform a logo into a flag-style texture
 # and composite it onto an aircraft tail image.
 
-from PIL import Image, ImageFilter, ImageOps
+from PIL import Image, ImageFilter, ImageOp
 import numpy as np
 
 def add_flag_wave_effect(img, amplitude=8, wavelength=40):
